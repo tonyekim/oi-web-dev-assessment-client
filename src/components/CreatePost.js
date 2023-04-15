@@ -12,7 +12,7 @@ function CreateStudent() {
 
   function handleSubmit(event) {
     event.preventDefault();
-    axios.post("https://oi-web-dev-assessment-test-client-02-r5hh.onrender.com/create", { name, content, category })
+    axios.post("https://oi-web-dev-assessment.onrender.com/create", { name, content, category })
       .then((res) => {
         console.log(res);
         navigate("/home");

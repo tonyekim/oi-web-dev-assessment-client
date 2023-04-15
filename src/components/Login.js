@@ -17,7 +17,7 @@ const Login = () => {
     event.preventDefault();
     const err = validation(values); setError(err);         
     if( err.email === "" && err.password === "") {
-      axios.post('https://oi-web-dev-assessment-test-client-02-r5hh.onrender.com/login', values)
+      axios.post('https://oi-web-dev-assessment.onrender.com/login', values)
       .then(res => {
         if (res.data === "Success") {
           navigate('/home')

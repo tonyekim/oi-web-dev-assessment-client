@@ -18,7 +18,7 @@ const Signup = () => {
     event.preventDefault();
     const err = validation(values); setError(err);         
     if(err.name === "" && err.email === "" && err.password === "") {
-      axios.post('https://oi-web-dev-assessment-test-client-02-r5hh.onrender.com/signup', values)
+      axios.post('https://oi-web-dev-assessment.onrender.com/signup', values)
       .then(res => {
         navigate('/')
       })
