@@ -12,7 +12,7 @@ function UpdatePost() {
   
     function handleSubmit(event) {
       event.preventDefault();
-      axios.put("http://localhost:8081/update/"+id, { name, content, category, id })
+      axios.put("https://oi-web-dev-assessment-test-client-02-r5hh.onrender.com/update/"+id, { name, content, category, id })
         .then((res) => {
           console.log(res);
           navigate("/home");
