@@ -4,6 +4,8 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Home from './components/Home';
 import CreatePost from './components/CreatePost';
 import UpdatePost from "./components/UpdatePost";
+import React from 'react';
+
 
 function App() {
   return (
